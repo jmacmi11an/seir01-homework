@@ -22,6 +22,9 @@ const showImages = function (results) {
     // $('#images').append($img);
     $img.appendTo('#images');
   });
+  $('img').click(function() {
+    $(this).toggleClass("feature");
+  })
 };
 
 
@@ -42,26 +45,31 @@ const generateURL = function (p) {
 
 
 $(document).ready(function () {
+
   //select the form
   //attach the submit handler
   $('#search').on('submit', function (event) {
     $('img').remove();
+    page = 1;
     event.preventDefault(); //disabled the form submission
     const term = $('#query').val();
     searchFlickr(term);
   });
 
-  $(window).on('scroll', function() {
+  $(window).on('scroll', _.throttle(function() {
     const scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop()
     if (scrollBottom <= 700) {
       const term = $('#query').val();
       page ++
-      _.throttle(searchFlickr(term), 500);   // not sure the _.once()  is working :(
+      searchFlickr(term);
 
     }
-  });
+  }, 700)); //originally wasn't working because pause was set to 100
+
+
 
 });
+
 
 
 

@@ -1,0 +1,19 @@
+/* body {
+  background-color: pink;
+} */
+img {
+  margin: 5px;
+  border-radius: 5em;
+}
+
+img.feature {
+  border-radius: 0px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2em solid rgba(10, 0, 0, .5)
+}
