@@ -1,0 +1,9 @@
+<h1>This is the current pokedex!</h1>
+
+<% @pokedex.each do |pokemon1| %>
+  <p>
+    <a href="/pokedex/<%= pokemon1["id"] %>">
+      <%= pokemon1["name"] %>
+    </a>
+  </p>
+  <% end %>

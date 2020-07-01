@@ -1,0 +1,11 @@
+<h2><%= @bucketlist["name"] %></h2>
+<h3><%= @bucketlist["place"] %></h3>
+
+<% unless @bucketlist["image"].nil? || @bucketlist["image"].empty? %>
+<img class="feature" src="<%= @bucketlist["image"] %>" alt="<%= @bucketlist["image"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/bucketlist/<%= @bucketlist["id"] %>/edit">Edit</a>
+  <a href="/bucketlist/<%= @bucketlist["id"] %>/delete">Delete</a>
+</div>

@@ -1,0 +1,9 @@
+<h2>Bucket List</h2>
+
+<% @bucketlist.each do |list| %>
+  <p>
+    <a href="/bucketlist/<%= list["id"] %>">
+      <%= list["name"] %>
+    </a>
+  </p>
+<% end %>

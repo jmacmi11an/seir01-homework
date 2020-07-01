@@ -1,0 +1,11 @@
+<h1>All Places</h1>
+<% @places.each do |place| %>
+  <%= image_tag place.image, :class =>'thumb' if place.image.present? %>
+  <ul>
+    <li>Name: <%= link_to place.name, place %></li>
+    <li>Region: <%= place.region %></li>
+    <li>Feature: <%= place.feature %></li>
+    <li>Period: <%= place.period %></li>
+    <li>Altitude(m): <%= place.altitude_in_m %></li>
+  </ul>
+<% end %>

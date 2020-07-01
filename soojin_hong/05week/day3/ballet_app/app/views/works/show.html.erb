@@ -1,0 +1,18 @@
+<h1><%= @work.title %></h1>
+
+<%= image_tag @work.image, :class => 'feature', :alt => @work.title if @work.image.present? %>
+
+  <ul>
+    <li>Title: <%= @work.title %></li>
+    <li>Plot: <%= @work.plot %> plots</li>
+    <li>Date of Premiere: <%= @work.premiere %></li>
+    <li>Place of Premiere: <%= @work.place %></li>
+    <% if @work.composer.present? %>
+      <li>Composer: <%= link_to @work.composer.name, @work.composer %></li>
+    <% end %>
+  </ul>
+
+  <div class="controls">
+    <%= link_to 'Edit work', edit_work_path(@work) %>
+    <%= link_to 'Delete work', @work, :method => 'delete' %>
+  </div>

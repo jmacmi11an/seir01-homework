@@ -1,0 +1,32 @@
+body {
+  background-color: ghostwhite;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.thumb {
+  height: 12em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+.feature {
+  max-height: 30em;
+}
+
+input, select {
+  margin: 1em auto;
+}

@@ -1,0 +1,10 @@
+<h1>All Authors</h1>
+
+<% @authors.each do |author| %>
+  <%= image_tag author.image, :class => 'thumb' if author.image.present?  %>
+  <ul>
+    <li>Book Name: <%= link_to author.name, author %></li>
+    <li>Author: <%= author.author %></li>
+    <li>Date of Birth: <%= author.dob.strftime '%B %e, %Y' if author.dob.present? %></li>
+  </ul>
+<% end %>

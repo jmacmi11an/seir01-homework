@@ -1,0 +1,18 @@
+<h1><%= @country.name %></h1>
+<%= image_tag @country.flag, :class => 'feature' if @country.flag.present? %>
+<ul>
+  <li>Name: <%=  @country.name %></li>
+  <li>Capital city: <%= @country.capital %></li>
+  <li>Official language: <%= @country.official_language %></li>
+  <li>Area(sqkm): <%= @country.area_in_sqkm %></li>
+  <li>Population: <%= @country.population %></li>
+</ul>
+
+<% @country.places.each do |place| %>
+  <%= link_to image_tag(place.image, :class => 'thumb'), place %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit Country', edit_country_path(@country) %>
+  <%= button_to 'Delete Country', @country, :method => 'delete' %>
+</div>

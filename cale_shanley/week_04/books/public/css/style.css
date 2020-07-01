@@ -1,0 +1,9 @@
+.container {
+  max-width: 960px; /* lazy responsice container */
+  background-color: white;
+  margin: auto; /* Horizontal centering */
+}
+
+body {
+  text-align: center;
+}

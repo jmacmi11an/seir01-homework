@@ -1,0 +1,25 @@
+<h2>Buy a new Property</h2>
+
+<form action="<%= properties_path %>" method="post">
+  <label>
+  Name:
+  <input name="name" required>
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image">
+  </label>
+
+  <label>
+    Monopoly:
+    <input name="monopoly">
+  </label>
+
+  <label>
+    Rent:
+    <input name="rent">
+  </label>
+
+  <button>Buy Property</button>
+</form>

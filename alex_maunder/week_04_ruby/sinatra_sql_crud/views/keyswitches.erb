@@ -1,0 +1,12 @@
+<h2>Key Switches</h2>
+
+<!-- @switches are an array, switch is a string...-->
+<!-- <%= @switches[0]["name"] %> -->
+
+<% @switches.each do |switch| %>
+<p>
+  <a href="/keyswitches/<%= switch["id"] %>">
+    <%= "#{switch["brand"]} - #{switch["name"]}" %>
+  </a>
+</p>
+<% end %>

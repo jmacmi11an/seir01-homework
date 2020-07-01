@@ -1,0 +1,11 @@
+<h2><%= @switch["name"] %></h2>
+<h3>Brand: <em><%= @switch["brand"] %></em></h3>
+
+<% unless @switch["image"].nil? || @switch["image"].empty? %>
+  <img class="feature" src="<%= @switch["image"] %>" alt="<%= @switch["name"] %>">
+<% end %>
+
+<div class="user_controls">
+  <a href="/keyswitches/<%= @switch["id"] %>/edit">Edit Switch</a>
+  <a href="/keyswitches/<%= @switch["id"] %>/delete">Delete Switch</a>
+</div>

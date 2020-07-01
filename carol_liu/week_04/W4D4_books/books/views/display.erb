@@ -1,0 +1,24 @@
+<header>
+  <h2><%= @title %> </h2>
+</header>
+
+<main>
+  <section>
+    <p><strong>Author(s):</strong> <%= @authors %></p>
+    <img src= <%= @cover_image %> alt="book_cover">
+  </section>
+
+  <aside>
+    <p class="descriptionTitle">Description:</p>
+    <p class="descriptionContent"><%= @description %></p>
+    <p class="publisher"><strong>Publisher:</strong> <%= @publisher %>
+    <br><strong>Published Date:</strong> <%= @published_date %>
+    <br><strong>Categories:</strong> <%= @categories %>
+    <br><strong>Page Count:</strong> <%= @page_count %></p>
+  </aside>
+</main>
+
+
+<footer>
+  &copy; Copyright Google.com 2020
+</footer>

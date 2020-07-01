@@ -1,0 +1,11 @@
+<h2>learn about <%= @dragonball["name"] %></h2>
+
+<h3>race: <%= @dragonball["race"] %></h3>
+
+<p>Powerlevel: <%= @dragonball["power_lvl"] %></p>
+<img src="<%= @dragonball["image"]%>" alt="<%= @dragonball["name"] %>" class="feature">
+
+<div class="controls">
+  <a href="/character/<%= @dragonball["id"]%>/edit">Edit Fighter</a>
+  <a href="/character/<%= @dragonball["id"] %>/delete">Delete Fighter</a>
+</div>

@@ -1,0 +1,12 @@
+<h1>All Authors</h1>
+
+<% @authors.each do |author| %>
+<%= image_tag author.image, :class => 'thumb' if author.image.present? %>
+<ul>
+    <li>Name: <%= link_to author.name, author_path(author.id) %></li>
+    <li>Nationality: <%= author.nationality %></li>
+    <li>Date of Birth: <%= author.dob.strftime '%A, %B %e, %Y' %></li>
+    <li>Genre: <%= author.genre %></li>
+    <li>Wiki: <%= author.wiki %></li>
+</ul>
+<% end %>

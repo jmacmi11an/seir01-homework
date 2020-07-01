@@ -1,0 +1,7 @@
+<h2>All Mountains</h2>
+
+<% @mountains.each do |mountain| %>
+  <p> 
+  <a href="/mountains/<%= mountain.id %>"><%= mountain.name %></a> 
+  </p>
+<% end %>

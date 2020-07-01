@@ -1,0 +1,13 @@
+<h2><%= @island.name %></h2>
+
+<%= image_tag @island.image, :class => 'feature' if @island.image.present? %>
+
+<ul>
+  <li>Name: <%= @island.name %></li>
+  <li>Country: <%= @island.country %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to "Edit Island", edit_island_path(@island.id) %>
+  <%= button_to "Delete Island", island_path(@island.id), :method => 'delete' %>
+</div>

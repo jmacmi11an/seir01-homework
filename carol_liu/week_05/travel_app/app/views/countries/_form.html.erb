@@ -1,0 +1,16 @@
+<%= form_for @country do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true, :autofocus => true %>
+  <%= f.label :capital %>
+  <%= f.text_field :capital %>
+  <%= f.label :official_language %>
+  <%= f.text_field :official_language %>
+  <%= f.label :area_in_sqkm, 'Area(sqkm)' %>
+  <%= f.text_field :area_in_sqkm, :placeholder => '232,493,343'%>
+  <%= f.label :population %>
+  <%= f.text_field :population, :placeholder => '232,493,343'%>
+  <%= f.label :flag %>
+  <%= f.url_field :flag, :placeholder =>'http://...'%>
+
+  <%= f.submit %>
+<% end %>

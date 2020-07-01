@@ -1,0 +1,60 @@
+body {
+  width: 80%;
+  margin: 5% 20%;
+  display: inline-block;
+}
+
+
+header {
+  font-size: 1.5em;
+  padding-bottom: 0;
+  border-bottom: 0.2em solid grey;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2em auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: double;
+  font-size: 1.2em;
+  width: 45%;
+}
+
+img {
+  max-width: 200%;
+  max-height: 200%;
+  width: 50%;
+  height: 50%;
+}
+
+aside {
+  width: 40%;
+  line-height: double;
+}
+
+aside .descriptionTitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+aside .descriptionContent {
+  margin-bottom: 3em;
+}
+
+footer {
+
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid lightgrey;
+  margin-top: 8em;
+  padding-top: 1em;
+}

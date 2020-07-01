@@ -1,0 +1,7 @@
+<h2>All Islands</h2>
+
+<% @islands.each do |island| %>
+  <p>
+    <%= link_to island.name, island_path(island.id) %>
+  </p>
+<% end %>

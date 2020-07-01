@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+    background-image: url("Books.jpg");
+
+}
+
+div{
+    margin: 0 auto;
+    width: 960px;
+    background-color: white;
+    min-height: 80vh;
+}
+
+a{
+    margin: 40px;
+}
+
+img{
+    margin: 0 auto; 
+    padding: 50px;
+}

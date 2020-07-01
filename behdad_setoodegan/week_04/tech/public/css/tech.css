@@ -1,0 +1,56 @@
+body{
+    
+}
+
+.container{
+    background-color: lightgray;
+    min-height: 90vh;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 15px 6px black;
+}
+
+a{
+    margin-right: 10px;
+}
+
+a :hover{
+    background-color: yellow;
+}
+
+label{
+    display: block;
+}
+
+.featuere{
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px black;
+    
+}
+
+.menu{
+    width: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 2px black;
+}
+
+.list{
+    display: inline-block;
+    padding: 15px;
+}
+
+.proName{
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+.control{
+    display: block;
+    text-align: center;
+}
+

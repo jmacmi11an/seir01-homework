@@ -1,0 +1,9 @@
+<h2>All Products</h2>
+
+<% @tech.each do |product| %>
+<p>
+    <a href="/tech/<%= product["category"] %>">
+        <%= product["category"] %>
+    </a>
+</p>
+<% end %>

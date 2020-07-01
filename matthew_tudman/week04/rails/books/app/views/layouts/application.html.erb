@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <nav>
+      <%= link_to 'All Authors', authors_path %>
+      <%= link_to 'New Author', new_author_path %>
+      <span id="divide">|</span>
+      <%= link_to 'All Novels', novels_path %>
+      <%= link_to 'New Novel', new_novel_path %>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

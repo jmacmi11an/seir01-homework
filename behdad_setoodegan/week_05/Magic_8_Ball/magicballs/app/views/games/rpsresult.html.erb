@@ -1,0 +1,58 @@
+<h2>Rock Paper Scissors</h2>
+
+<h4 id="choice">
+    Your choice is: <h2 id="playerChoice"><%= params[:throw] %></h2>
+</h4>
+<h4>Computer choice is: <h2 id="cpuChoice"><h2></h4>
+
+<h1 id="rpsResult"></h1>
+<script>
+  var myArray = ["rock","paper","scissors"]
+  var randomItem = myArray[Math.floor(Math.random()*myArray.length)]
+  document.getElementById("cpuChoice").innerHTML = randomItem
+  let choice = document.getElementById("playerChoice").innerHTML
+  if (choice === "rock"){
+    switch(randomItem) {
+      case "rock":
+        rpsOut("Draw.")
+        break;
+      case "paper":
+        rpsOut("You lose!")
+        break;
+      case "scissors":
+        rpsOut("You Win.")
+        break;
+    }
+  }else if (choice === "paper"){
+    switch(randomItem) {
+      case "rock":
+        rpsOut("You Win.")
+        break;
+      case "paper":
+        rpsOut("Draw.")
+        break;
+      case "scissors":
+        rpsOut("You Lose!")
+        break;
+    }
+
+  }else{
+    switch(randomItem) {
+      case "rock":
+        rpsOut("You lose!")
+        break;
+      case "paper":
+        rpsOut("You Win.")
+        break;
+      case "scissors":
+        rpsOut("Draw.")
+        break;
+    }
+
+  }
+
+  function rpsOut(txt){
+    document.getElementById("rpsResult").innerHTML = txt
+  }
+
+</script>

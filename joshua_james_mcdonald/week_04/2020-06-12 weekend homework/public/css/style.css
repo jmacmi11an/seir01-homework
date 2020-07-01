@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&display=swap');
+
+#bug {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2.7rem;
+    color: rgb(94, 167, 94);
+}
+
+#track {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: lightseagreen;
+}
+
+button.small-btn {
+    padding: 3px 8px;
+    margin-top: 5px;
+}
+
+/* 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+} */
+
+.flex-container{
+    display: flex;
+}
+header{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer.flex-container{
+    justify-content: space-evenly;
+}
+footer p {
+    font-size: x-small;
+}
+
+div.header a {
+    padding: 0 20px;
+}
+

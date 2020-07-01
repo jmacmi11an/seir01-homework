@@ -1,0 +1,11 @@
+<h2>and ANOTHER game?</h2>
+
+<p>User selected <%= @player_choice %> and computer selected <%= @computer_choice %></p>
+
+<% if @draw %>
+Draw
+<% elsif @player_win %>
+Congratulations you won, Human!
+<% elsif @computer_win %>
+Unlucky mate.
+<% end %>

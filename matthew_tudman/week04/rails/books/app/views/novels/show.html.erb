@@ -1,0 +1,15 @@
+<h1><%= @novel.title %></h1>
+
+
+<%= image_tag @novel.image, :class => 'feature' if @novel.image.present?%>
+<ul>
+  <li>Title: <%= @novel.title %></li>
+  <li>Year: <%= @novel.year %></li>
+  <li>Word Count: <%= @novel.length %></li>
+  <li>Genre: <%= @novel.genre %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit Novel', edit_novel_path(@novel.id) %>
+  <%= link_to 'Delete Novel', @novel, :method => 'delete' %>
+</div>

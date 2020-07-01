@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug tracker</title>
+    <%# stylesheets %>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+<div class="container">
+    <header class="flex-container">
+        <div class="logo">
+        <span id="bug">BUG</span><span id="track">Tracks</span>
+        </div>
+        <div class="links header">
+            <a href="/new">New bug</a>
+            <a href="/">View Bugs</a>
+        </div>
+    </header>
+
+    <main>
+        <%= yield %>
+    </main>
+    </div>
+    <footer class="flex-container">
+        <p>Made with ❤ by Joshua McDonald</p>
+        <p>See my other projects at <a href="https://github.com/gorff">GitHub</a></p>
+    </footer>
+</body>
+
+</html>

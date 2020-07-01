@@ -1,0 +1,19 @@
+<h2>Edit Cat</h2>
+
+<form action="<%= cat_path(@cat.id) %>" method="post">
+    <lable>
+        Name:
+        <input name="name" required value="<%= @cat.name%>">
+    </lable>
+    <lable>
+        Image:
+        <input type="url" name="image" value="<%= @cat.image%>">
+    </lable>
+    <lable>
+        Age:
+        <input type="number" name="age" value="<%= @cat.age%>">
+    </lable>
+
+    <button>Edit cat</button>
+    
+</form>

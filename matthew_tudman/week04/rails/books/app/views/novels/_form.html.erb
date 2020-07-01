@@ -1,0 +1,28 @@
+
+<!-- no method, no action, no authenticity token -->
+
+<%= form_for @novel do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title, :required => true, :autofocus => true %>
+
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+
+  <%= f.label :length, "Word Count" %>
+  <%= f.text_field :length %>
+
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.label :author_id%>
+  <%= f.select :author_id, Author.pluck(:name, :id), :include_blank => true%>
+
+  <div class="submit">
+  <%= f.submit %>
+  </div>
+
+<% end %>

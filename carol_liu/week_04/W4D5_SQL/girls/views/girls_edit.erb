@@ -1,0 +1,31 @@
+<h2>Edit Girl's Information</h2>
+
+<form action="/girls/<%= @girl["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Aleks..." required value=" <%= @girl["name"] %> ">
+  </label>
+  <label>
+    Height(cm):
+    <input name="height" placeholder="160" required value=" <%= @girl["height"] %> ">
+  </label>
+  <label>
+    Weight(kg):
+    <input name="weight" placeholder="50" required value=" <%= @girl["weight"] %> ">
+  </label>
+  <label>
+    Hair Color:
+    <input name="hair_color" placeholder="brown" value=" <%= @girl["hair_color"] %> ">
+  </label>
+  <label>
+    Skin Color:
+    <input name="skin_color" placeholder="white" value=" <%= @girl["skin_color"] %> ">
+  </label>
+  <label>
+    Image
+    <input name="image" placeholder="http://..." value=" <%= @girl["image"] %> ">
+  </label>
+
+
+  <button>Update details</button>
+</form>

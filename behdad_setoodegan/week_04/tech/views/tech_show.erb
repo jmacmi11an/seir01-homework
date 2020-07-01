@@ -1,0 +1,12 @@
+<h2><%= @product["name"] %></h2>
+<h3>Category: <em><%= @product["category"] %></em></h3>
+
+<% unless @product["image"].nil? || @product["image"].empty? %>
+    <img  class="featuere" src="<%= @product["image"] %>" alt="<%= @product["name"] %>" >
+<% end %>
+
+<div class="control">
+    <a href="/tech/<%= @product["category"] %>/<%= @product["id"] %>/edit">Edit the product</a>
+    <a href="/tech/<%= @product["category"] %>/<%= @product["id"] %>/delete">Delete the product</a>
+
+</div>

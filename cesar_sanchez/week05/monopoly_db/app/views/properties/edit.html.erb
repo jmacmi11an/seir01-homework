@@ -1,0 +1,25 @@
+<h2>Edit Property</h2>
+
+<form action="<%= property_path(@property.id) %>" method="post">
+  <label>
+  Name:
+  <input name="name" required value="<%= @property.name %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @property.image %>">
+  </label>
+
+  <label>
+    Monopoly:
+    <input name="monopoly" value="<%= @property.monopoly %>">
+  </label>
+
+  <label>
+    Rent:
+    <input name="rent" value="<%= @property.rent %>">
+  </label>
+
+  <button>Edit Property</button>
+</form>

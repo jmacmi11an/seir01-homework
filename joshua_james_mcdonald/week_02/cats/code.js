@@ -49,7 +49,7 @@ const createCat = function () {
         } else {
             cat.src = 'bloodsplatter.gif';
             setTimeout(function () {
-                alert("Somthing went wrong...");
+                alert("Something went wrong...");
                 setTimeout(function () {
                     alert("Did you have to pop so many cats.....");
                     setTimeout(function () {
@@ -74,4 +74,3 @@ createCatButton.style.left = "50%";
 createCatButton.style.top = "50%";
 createCatButton.addEventListener('click', createCat);
 
-// todo, have the cats bounce when they reach walls. and maybe rotate

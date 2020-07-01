@@ -1,0 +1,15 @@
+<h2><%= @property.name %></h2>
+
+<!-- planet image -->
+<%= image_tag @property.image, :class => 'feature' if @property.image.present? %>
+
+<ul>
+  <li>Name: <%= @property.name %></li>
+  <li>Monopoly: <%= @property.monopoly %></li>
+  <li>Rent: <%= @property.rent %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit property', edit_property_path(@property.id) %>
+  <%= button_to "Sell Property", property_path(@property.id), :method => 'delete' %>
+</div>

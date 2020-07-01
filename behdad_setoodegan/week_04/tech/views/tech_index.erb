@@ -1,0 +1,17 @@
+<h2>All <%= @cate.first["category"] %></h2>
+
+<% @cate.each do |product| %>
+<p class="list">
+    <a class="proName" href="/tech/<%= product["category"] %>/<%= product["id"] %>">
+        <%= product["name"] %>
+    </a>
+    
+
+    <a class="proName" href="/tech/<%= product["category"] %>/<%= product["id"] %>">
+        <% unless product["image"].nil? || product["image"].empty? %>
+            <img class="menu" src="<%= product["image"] %>" alt="<%= product["name"] %>" >
+        <% end %>
+    </a>
+    
+</p>
+<% end %>

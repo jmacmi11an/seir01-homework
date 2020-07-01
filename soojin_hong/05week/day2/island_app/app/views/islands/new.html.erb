@@ -1,0 +1,20 @@
+<h2>New Island</h2>
+
+<form action="<%= islands_path %>" method="post">
+  <label>
+    Name:
+    <input name="name" type="text" required>
+  </label>
+
+  <label>
+    Country:
+    <input name="country" type="text">
+  </label>
+
+  <label>
+    Image:
+    <input name="image" type="url">
+  </label>
+
+  <button>Create Island</button>
+</form>

@@ -1,0 +1,12 @@
+<h1>All Novels</h1>
+
+
+<%  @novels.each do |novel| %>
+  <%= image_tag novel.image, :class => 'thumb' if novel.image.present? %>
+  <ul class="index">
+    <li>Title: <%= link_to novel.title, novel %></li>
+    <li>Year: <%= novel.year %></li>
+    <li>Word Count: <%= novel.length %></li>
+    <li>Genre: <%= novel.genre %></li>
+  </ul>
+<% end %>

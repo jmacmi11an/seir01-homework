@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    height: 30%;
+    margin: 25% 10%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+}

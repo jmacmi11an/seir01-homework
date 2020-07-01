@@ -1,0 +1,11 @@
+<h1>All Countries</h1>
+<% @countries.each do |country| %>
+  <%= image_tag country.flag, :class => 'thumb' if country.flag.present? %>
+  <ul>
+    <li>Name: <%= link_to country.name, country %></li>
+    <li>Capital city: <%= country.capital %></li>
+    <li>Official language: <%= country.official_language %></li>
+    <li>Area(sqkm): <%= country.area_in_sqkm %></li>
+    <li>Population: <%= country.population %></li>
+  </ul>
+<% end %>

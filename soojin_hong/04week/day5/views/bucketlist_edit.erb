@@ -1,0 +1,20 @@
+<h2>Edit the List</h2>
+
+<form action="/bucketlist/<%= @bucketlist["id"] %>" method="post">
+  <label>
+    name:
+    <input name="name" placeholder="Learn to Surf" required value="<%= @bucketlist["name"] %>">
+  </label>
+
+  <label>
+    Place:
+    <input name="place" placeholder="Byron Bay" value="<%= @bucketlist["place"] %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @bucketlist["image"] %>">
+  </label>
+
+  <button>Update</button>
+</form>

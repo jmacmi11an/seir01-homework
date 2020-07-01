@@ -1,0 +1,10 @@
+<h2>All Mountains</h2>
+
+<% @mountains.each do |mountain| %>
+  <p>
+    The height of
+    <%= link_to mountain.name, mountain_path(mountain.id) %>
+    is
+    <%= mountain.height %>m.
+  </p>
+<% end %>

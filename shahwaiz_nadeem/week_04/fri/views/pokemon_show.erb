@@ -1,0 +1,12 @@
+<h2> <%= @pokemon["name"] %> </h2>
+
+<h3>Family : <em><%= @pokemon["family"]%></em></h3>
+
+<% unless @pokemon["image"].nil? || @pokemon["image"].empty? %>
+<img src="<%= @pokemon["image"]%>" alt="pic of the pokemon" width="40%">
+<% end %>
+
+<div class="controls">
+    <a href="/pokemon/<%= @pokemon["id"] %>/edit">Edit pokemon</a>
+    <a href="/pokemon/<%= @pokemon["id"] %>/delete">Delete pokemon</a>
+</div>

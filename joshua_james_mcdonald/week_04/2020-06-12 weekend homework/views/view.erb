@@ -1,0 +1,25 @@
+<div class="bug_item">
+    <h3><%= @bug_info[0]["title"] %></h3>
+    <div class="username">
+        <strong>Submitted by:</strong> <%= @bug_info[0]["username"] %>
+    </div>
+    <div class="title">
+        <strong>Title:</strong> <%= @bug_info[0]["title"] %>
+    </div>
+    <div class="description">
+        <strong>Description: </strong> <br>
+        <span class="description-small">
+            <%= @bug_info[0]["description"]%>
+
+        </span>
+    </div>
+    <div class="controls">
+        <a href="/edit/<%= @bug_info[0]["id"] %>">
+            <button class="small-btn" name="edit_button">Edit</button>
+        </a>
+        <a href="/del/<%= @bug_info[0]["id"] %>">
+            <button class="small-btn" name="delete_button">Delete</button>
+        </a>
+    </div>
+
+</div>

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+  background-color: #FFFFFF;
+}
+
+.container {
+  background-color: rgb(240, 248, 255, 0.7);
+  min-height: 80vh;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: #03254c;
+  color: #d0efff;
+  transition: 1s;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.author {
+  color: grey;
+  font-size: 0.8em;
+}
+
+.title, .author, .link {
+  padding: 5px 0;
+}

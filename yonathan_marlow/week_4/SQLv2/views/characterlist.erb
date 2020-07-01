@@ -1,0 +1,9 @@
+<h3>Below is a list of the Characters in Dragon Ball Z</h3>
+
+<% @dragonball.each do |fighter| %>
+  <p>
+    <a href="/characters/<%= fighter["id"] %>">
+      <%= fighter["name"] %>
+    </a>
+  </p>
+  <% end %>

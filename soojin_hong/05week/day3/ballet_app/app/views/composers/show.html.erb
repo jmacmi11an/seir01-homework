@@ -1,0 +1,17 @@
+<h1><%= @composer.name %></h1>
+
+<%= image_tag @composer.image, :class => 'feature' if @composer.image.present? %>
+<ul>
+  <li>Name: <%= @composer.name %></li>
+  <li>Nationality: <%= @composer.nationality %></li>
+  <li>Date of birth: <%= @composer.dob.strftime '%e %b %Y' if @composer.dob.present?%></li>
+</ul>
+
+<% @composer.works.each do |work| %>
+  <%= link_to image_tag(work.image, :class => 'thumb'), work %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit Composer', edit_composer_path(@composer.id) %>
+  <%= link_to 'Delete Composer', @composer, :method => 'delete' %>
+</div>

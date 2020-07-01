@@ -1,0 +1,21 @@
+<%= form_for @work do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, :required => true, :autofocus => true %>
+
+  <%= f.label :plot %>
+  <%= f.number_field :plot %>
+
+  <%= f.label :premiere %>
+  <%= f.text_field :premiere, :placeholder => 'YYYY-MM-DD' %>
+
+  <%= f.label :place %>
+  <%= f.text_field :place %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+
+  <%= f.label :composer_id %>
+  <%= f.select :composer_id, Composer.pluck(:name, :id), :include_blank => true %>
+
+  <%= f.submit %>
+<% end %>

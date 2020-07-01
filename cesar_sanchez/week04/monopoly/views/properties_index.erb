@@ -1,0 +1,9 @@
+<h1>List of Monopoly properties</h1>
+
+<% @properties.each do |properties| %>
+
+  <ul class="list_properties">
+    <li><a href="property/<%= properties["id"] %>"><%= properties["name"] %></a></li>
+  </ul>
+
+<% end %>

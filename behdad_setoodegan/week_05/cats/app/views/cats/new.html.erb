@@ -1,0 +1,19 @@
+<h2>New Cat</h2>
+
+<form action="<%= cats_path %>" method="post">
+    <lable>
+        Name:
+        <input name="name" required>
+    </lable>
+    <lable>
+        Image:
+        <input type="url" name="image">
+    </lable>
+    <lable>
+        Age:
+        <input type="number" name="age" >
+    </lable>
+
+    <button>Create cat</button>
+    
+</form>

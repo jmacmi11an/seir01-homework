@@ -1,0 +1,12 @@
+<h2>All cats</h2>
+
+<% @cats.each do |cat|%>
+<p>
+    <%= link_to cat.name, cat_path(cat.id)%>
+    is
+    <%= pluralize (cat.age).to_i, 'year'%>
+    old.
+   
+</p>
+
+<% end %>

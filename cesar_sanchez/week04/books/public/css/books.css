@@ -1,0 +1,20 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  background-color: white;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cover {
+  display: inline-block;
+  margin-left: 45%;
+}
+
+.description {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5%;
+}

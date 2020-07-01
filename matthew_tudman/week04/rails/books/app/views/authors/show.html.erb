@@ -1,0 +1,18 @@
+<h1><%= @author.name %></h1>
+
+<%= image_tag @author.image, :class => 'feature' if @author.image.present?%>
+<ul>
+  <li>Name: <%= @author.name %></li>
+  <li>Nationality: <%= @author.nationality %></li>
+  <li>Date of birth: <%= @author.dob.strftime '%A, %B %e, %Y' if @author.dob.present? %></li>
+  <li>Genre: <%= @author.genre %></li>
+</ul>
+
+<% @author.novels.each do |novel| %>
+  <%= link_to image_tag(novel.image, :class => 'thumb'), novel %>
+<% end %>
+
+<div class="controls">
+  <%= link_to 'Edit Author', edit_author_path(@author.id) %>
+  <%= link_to 'Delete Author', @artist, :method => 'delete' %>
+</div>

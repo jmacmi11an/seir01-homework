@@ -1,0 +1,7 @@
+<h2>All pokemons</h2>
+
+<% @pokemons.each do |pokemon| %>
+  <p>
+    <%= link_to pokemon.name,"/pokemons/#{pokemon.id}" %>
+  </p>
+<% end %>

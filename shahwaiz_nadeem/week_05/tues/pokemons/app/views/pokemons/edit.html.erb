@@ -1,0 +1,30 @@
+<h2>EDIT Pokemon</h2>
+
+<form action="<%= pokemon_path(@pokemon.id) %>" method="post">
+  <label style="display: block; margin: 10px">
+    Name:
+    <input name="name" value="<%= @pokemon.name %>" required>
+  </label>
+  <label style="display: block; margin: 10px">
+    Image:
+    <input type="url" name="image" value="<%= @pokemon.image %>">
+  </label>
+  <label style="display: block; margin: 10px">
+    Orbit:
+    <input type="number" name="orbit" value="<%= @pokemon.orbit %>">
+  </label style="display: block; margin: 10px">
+  <label  style="display: block; margin: 10px">
+    Diameter:
+    <input type="number" name="diammeter" value="<%= @pokemon.diammeter %>">
+  </label>
+  <label style="display: block; margin: 10px">
+    Mass:
+    <input type="number" name="mass" value="<%= @pokemon.mass %>">
+  </label>
+  <label style="display: block; margin: 10px">
+    Moons:
+    <input type="number" name="moons" value="<%= @pokemon.moons %>">
+  </label>
+
+  <button type="submit">UPDATE PLANET</button>
+</form>

@@ -1,0 +1,9 @@
+<h2>All Girls from Aleks Printer</h2>
+
+<% @girls.each do |girl| %>
+<p>
+  <a href="/girls/<%= girl["id"] %>">
+    <%= girl["name"] %>
+  </a>
+</p>
+<% end %>

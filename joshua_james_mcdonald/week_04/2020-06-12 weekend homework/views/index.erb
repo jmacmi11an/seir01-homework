@@ -1,0 +1,36 @@
+<h2>List of bugs: </h2>
+<%# Write a loop over the database items to display them nicely. Start with just 1 item, then loop that whole block. %>
+
+<% for i in 0..@database_info.length-1 %>
+<div class="bug_item">
+    <h3><%= @database_info[i]["title"] %></h3>
+    <div class="username">
+        <strong>Submitted by:</strong> <%= @database_info[i]["username"] %>
+    </div>
+    <div class="title">
+        <strong>Title:</strong> <%= @database_info[i]["title"] %>
+    </div>
+    <div class="description">
+        <strong>Description: </strong> <br>
+        <span class="description-small">
+            <% if @database_info[i]["description"].length <250  %>
+            <%= @database_info[i]["description"]%>
+            <% else %>
+            <%= @database_info[i]["description"][0..250] %> ... <a href="/view/<%=@database_info[i]["id"] %>">See
+                more</a>
+            <% end %>
+
+        </span>
+    </div>
+    <div class="controls">
+        <a href="/edit/<%= @database_info[i]["id"] %>">
+            <button class="small-btn" name="edit_button">Edit</button>
+        </a>
+        <a href="/del/<%= @database_info[i]["id"] %>">
+            <button class="small-btn" name="delete_button">Delete</button>
+        </a>
+    </div>
+
+</div>
+
+<% end %>

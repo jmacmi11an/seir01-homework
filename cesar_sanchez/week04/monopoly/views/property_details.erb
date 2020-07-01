@@ -1,0 +1,13 @@
+<h1>Property details of: <%= @properties["name"] %></h1>
+
+<% unless @properties["image"].nil? || @properties["image"].empty? %> # This unless loop will hide the image of the property if that entry is empty or it has the value of nil. Is it nil? Is it an empty string? True? Hide.
+<img src="<%= @properties["image"] %>" alt="Property picture - <%= @properties["name"] %>" class="feature">
+<% end %>
+
+<h2>Monopoly: <%= @properties["monopoly"] %></h2>
+<h2>Rent: <%= @properties["rent"] %></h2>
+
+<div class="controls">
+  <a href="/properties/<%= @properties["id"] %>/edit">Edit</a>
+  <a href="/properties/<%= @properties["id"] %>/delete">Delete</a>
+</div>

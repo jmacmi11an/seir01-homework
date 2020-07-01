@@ -1,0 +1,20 @@
+<h1>Edit Keyswitch</h1>
+
+<form action="/keyswitches/<%= @switch["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Black" required value="<%= @switch["name"] %>">
+  </label>
+
+  <label>
+    Brand:
+    <input name="brand" placeholder="Cherry MX" value="<%= @switch["brand"] %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @switch["image"] %>">
+  </label>
+
+  <button>Update KeySwitch</button>
+</form>

@@ -1,0 +1,13 @@
+<h2><%= @pokemon.name %></h2>
+
+<%= image_tag @pokemon.image, :class => 'feature' if @pokemon.image.present? %>
+
+<ul>
+  <li>Name: <%= @pokemon.name %></li>
+  <li>Type: <%= @pokemon.type %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit Pokemon', edit_pokemon_path(@pokemon.id)  %>
+  <%= button_to 'Delete Pokemon', pokemon_path(@pokemon.id), :method => 'delete' %>
+</div>

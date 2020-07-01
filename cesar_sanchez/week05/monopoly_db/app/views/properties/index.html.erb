@@ -1,0 +1,7 @@
+<h2>Properties Portfolio</h2>
+
+<% @properties.each do |property| %>
+  <p>
+    <%= link_to property.name, property_path(property.id) %>
+  </p>
+<% end %>

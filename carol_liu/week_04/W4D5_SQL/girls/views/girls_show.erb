@@ -1,0 +1,16 @@
+<h2><%= @girl["name"] %></h2>
+
+<h3>Description:</h3>
+<p class="weight_height"><em><%= @girl["height"] %>cm, <%= @girl["weight"] %>kg</em></p>
+<p class="color">Hair color: <%= @girl["hair_color"] %>, skin color: <%= @girl["skin_color"] %></p>
+<p class="feature">Feature: <%= @girl["feature"] %></p>
+
+<% unless @girl["image"].nil? || @girl["image"].empty? %>
+  <img src="<%= @girl["image"] %>" alt="<%= @girl["name"] %>">
+<% end %>
+
+
+<div class="controls">
+  <p><a href="/girls/<%= @girl["id"] %>/edit">Edit girl's Information</a></p>
+  <p><a href="/girls/<%= @girl["id"] %>/delete">Send her into the light!</a></p>
+</div>

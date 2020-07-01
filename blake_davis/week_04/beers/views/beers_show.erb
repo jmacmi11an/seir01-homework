@@ -1,0 +1,11 @@
+<h2><%= @beer["name"] %></h2>
+<h3>Family: <em><%= @beer["family"] %></em></h3>
+
+<% unless @beer["image"].nil? || @beer["image"].empty? %>
+<img class="feature" src="<%= @beer["image"] %>" alt="<%= @beer["name"] %>">
+<% end %>
+
+<div class="controls">
+  <a href="/beers/<%= @beer["id"] %>/edit">Edit This Beer!</a>
+  <a href="/beers/<%= @beer["id"] %>delete"> Delete This Beer!</a>
+</div>

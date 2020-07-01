@@ -1,0 +1,12 @@
+<h2>Learn about <%= @pokemon["name"] %></h2>
+
+<h3>Type: <%= @pokemon["type"] %></h3>
+
+<p><%= @pokemon["description"] %></p>
+
+<img class="feature" src="<%= @pokemon["image"] %>" alt="<%= @pokemon["name"] %>">
+
+<div class="controls">
+  <a href="/pokedex/<%= @pokemon["id"]%>/edit">Edit Pokemon</a>
+  <a href="/pokedex/<%= @pokemon["id"] %>/delete">Delete Pokemon</a>
+</div>

@@ -1,0 +1,18 @@
+<%= form_for @place do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true, :autofocus => true %>
+  <%= f.label :region %>
+  <%= f.text_field :region %>
+  <%= f.label :feature %>
+  <%= f.text_field :feature %>
+  <%= f.label :period %>
+  <%= f.text_field :period %>
+  <%= f.label :altitude_in_m, 'Altitude(m)' %>
+  <%= f.text_field :altitude_in_m, :placeholder => '3,343'%>
+  <%= f.label :image %>
+  <%= f.url_field :image, :placeholder =>'http://...'%>
+  <%= f.label :country %>
+  <%= f.select :country_id, Country.pluck(:name, :id), :include_blank => true %>
+
+  <%= f.submit %>
+<% end %>

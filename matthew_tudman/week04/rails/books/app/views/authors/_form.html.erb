@@ -1,0 +1,25 @@
+
+<!-- no method, no action, no authenticity token -->
+
+<%= form_for @author do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true, :autofocus => true %>
+
+  <%= f.label :nationality %>
+  <%= f.text_field :nationality %>
+
+  <%= f.label :dob, "Date of Birth" %>
+  <%= f.text_field :dob, :placeholder => "YYYY-MM-DD" %>
+
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+  
+  <div class="submit">
+  <%= f.submit %>
+  </div>
+
+<% end %>

@@ -1,0 +1,19 @@
+<h2>Edit Product</h2>
+<form action="/tech/<%= @product["category"] %>/<%= @product["id"] %>" method="post">
+    <label>
+    Name:
+        <input name="name" placeholder="name" required value="<%= @product["name"] %>">
+    </label>
+
+    <label>
+    Category:
+        <input name="category" placeholder="category" value="<%= @product["category"] %>">
+    </label>
+
+    <label>
+    Image:
+        <input type="url" name="image" placeholder="http://..." value="<%= @product["image"] %>">
+    </label>
+
+    <button>Update</button>
+</form>

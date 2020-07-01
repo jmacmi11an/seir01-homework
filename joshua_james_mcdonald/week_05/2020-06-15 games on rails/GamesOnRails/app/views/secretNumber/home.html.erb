@@ -1,0 +1,15 @@
+secret number page
+<form action="/secretnumber/" method="get">
+<label for="">Input guess</label>
+<input type="number" name="guess" id="">
+<button>Submit</button>
+</form>
+message: <%= @message %> <br>
+message done a more annoying way:
+<% if @number.to_s == params[:guess] %>
+Congrats! you guessed the number
+<% end %> <br>
+condition: <%= @number.to_s == params[:guess] %> <br>
+number: <%= @number %> <br>
+guess: <%= params[:guess] %> <br>
+<%= @otherguessiguess %>

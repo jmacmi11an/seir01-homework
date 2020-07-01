@@ -1,0 +1,10 @@
+<h1>All Composers</h1>
+
+<% @composers.each do |composer| %>
+  <%= image_tag composer.image, :class => 'thumb' if composer.image.present? %>
+  <ul>
+    <li>Name: <%= link_to composer.name, composer %> </li>
+    <li>Nationality: <%= composer.nationality %></li>
+    <li>Date of Birth: <%= composer.dob.strftime '%e %b %Y' if composer.dob.present? %></li>
+  </ul>
+<% end %>

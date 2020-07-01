@@ -1,0 +1,22 @@
+<h2>Edit This pokemon</h2>
+
+<form action="/pokemon/<%= @pokemon["id"]%>" method="POST">
+
+    <label>
+        Name:
+        <input name="name" type="text" value="<%= @pokemon["name"] %>" required>
+    </label>
+
+    <label>
+        Family:
+        <input name="family" type="text" value="<%= @pokemon["family"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input name="image" type="url" value="<%= @pokemon["image"] %>">
+    </label>
+
+    <button>Confirm edits!</button>
+
+</form>

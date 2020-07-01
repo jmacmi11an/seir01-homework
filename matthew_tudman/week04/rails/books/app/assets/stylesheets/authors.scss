@@ -1,0 +1,33 @@
+// Place all the styles related to the Authors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.thumb {
+  width: 10em;
+  margin: 2em;
+}
+.feature {
+  max-height: 30em;
+  margin-top: 2em;
+}
+.index {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 13em;
+  margin-top: 5em;
+}
+.submit {
+  margin-top: 20px;
+}
+
+a {
+  margin-right: 20px;
+}
+
+#divide {
+  margin-right: 20px;
+}
+nav {
+  margin: 1em;
+  margin-left: 13em;
+}
