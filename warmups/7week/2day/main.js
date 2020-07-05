@@ -11,6 +11,7 @@ const flatten = function (arr) {
 	arr.forEach(function (el) {
 		if (Array.isArray(el)) {
 			out = out.concat(el);
+			// out = [...out, ...el]; // you dont have to get that yet
 		} else {
 			out.push(el);
 		}
